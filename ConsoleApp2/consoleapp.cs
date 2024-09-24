@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using System.Net;
 using System.Text.RegularExpressions;
 
-internal class Program
+internal class consoleapp
 {
     private static void Main(string[] args)
     {
