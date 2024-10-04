@@ -5,9 +5,11 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{7A72206C-558F-4F18-A8AF-8D36327A08DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metodos", "Metodos\Metodos.csproj", "{BEA5D266-0C45-4DAB-A784-6D06954E2070}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodos", "Metodos\Metodos.csproj", "{BEA5D266-0C45-4DAB-A784-6D06954E2070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objetos1", "Objetos1\Objetos1.csproj", "{704C8C6D-7CDB-4956-86AC-804E674D56EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Objetos1", "Objetos1\Objetos1.csproj", "{704C8C6D-7CDB-4956-86AC-804E674D56EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act2_Clase Curso", "Act2_Clase Curso\Act2_Clase Curso.csproj", "{9B1A38F8-348E-4995-83A8-FDC7B3C42F57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{704C8C6D-7CDB-4956-86AC-804E674D56EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{704C8C6D-7CDB-4956-86AC-804E674D56EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{704C8C6D-7CDB-4956-86AC-804E674D56EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1A38F8-348E-4995-83A8-FDC7B3C42F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1A38F8-348E-4995-83A8-FDC7B3C42F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1A38F8-348E-4995-83A8-FDC7B3C42F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1A38F8-348E-4995-83A8-FDC7B3C42F57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
