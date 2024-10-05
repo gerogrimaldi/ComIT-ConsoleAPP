@@ -9,8 +9,8 @@ namespace Act2_Clase_Curso
     internal class Persona
     {
         protected long _dni;
-        protected string _nombre = string.Empty;
-        protected string _apellido = string.Empty;
+        protected string _nombre = "";
+        protected string _apellido = "";
         protected DateOnly _fechaNac = new ();
 
         public Persona(long dni, string nombre, string apellido, DateOnly fechaNac)
@@ -21,6 +21,7 @@ namespace Act2_Clase_Curso
             this._fechaNac = fechaNac;
         }
         
+        //######### GETTERS ###########
         public string getNombre()
         {
             return _nombre + _apellido;
@@ -32,6 +33,29 @@ namespace Act2_Clase_Curso
         public DateOnly getfechaNac()
         {
             return _fechaNac;
+        }
+       
+        public virtual void mostrarDatos()
+        {
+            Console.WriteLine("Nombre: "+ this._nombre + " " + this._apellido);
+            Console.WriteLine("DNI: "+ this._dni);
+            Console.WriteLine("Fecha Nacimiento: "+ this._fechaNac);
+            //Console.WriteLine("Edad: "+ this.calcularEdad());
+
+        }
+
+        //### Calculos 
+        public int calcularEdad()
+        {
+            int edad = DateTime.Today.Year - _fechaNac.Year;
+
+            // Si la persona no ha cumplido años este año, restamos 1
+            if (DateTime.Today.CompareTo(_fechaNac.AddYears(edad)) < 0)
+            {
+                edad--;
+            }
+
+            return edad;
         }
     }
 }

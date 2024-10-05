@@ -19,5 +19,12 @@ namespace Act2_Clase_Curso
         {
             return _aniosExp;
         }
+        public override void mostrarDatos()
+        {
+            Console.WriteLine("\nProfesor: ");
+            base.mostrarDatos();
+            Console.WriteLine("Años de experiencia: " + this.getExp());
+        }
+        
     }
 }

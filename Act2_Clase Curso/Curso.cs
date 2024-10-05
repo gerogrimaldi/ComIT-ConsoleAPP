@@ -32,16 +32,31 @@ namespace Act2_Clase_Curso
             this._Profesor = profesor;
         }
 
-        public void mostrarCurso()
-        {
-            Console.WriteLine("Curso: " + this.getNombre());
-        }
-
         //GETTERS
         public string getNombre()
         {
             return this._nombre;
         }
+        public int getCantAlumnos()
+        {
+            return this._cantMaxAlumnos;
+        }
+
+        public void mostrarCurso()
+        {
+            Console.WriteLine("\nCurso: " + this.getNombre());
+            this._Profesor.mostrarDatos();
+
+            int i = 1;
+
+            foreach (Alumno a in _Alumnos ?? Enumerable.Empty<object>())
+            {
+                if(a == null) break;
+                Console.WriteLine("\nAlumno: " + (i++));
+                a.mostrarDatos();
+            }
+        }
+
     }
 
 }

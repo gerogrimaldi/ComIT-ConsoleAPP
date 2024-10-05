@@ -15,9 +15,19 @@ namespace Act2_Clase_Curso
             this._trabaja = trabaja;
         }
 
+        //##########GETTERS######
         public bool getTrabaja()
         {
             return this._trabaja;
+        }
+        public string str_trabaja()
+        {
+            return this._trabaja ? "Si" : "No";
+        }
+        public override void mostrarDatos()
+        {
+            base.mostrarDatos();
+            Console.WriteLine("Trabaja: " + this.str_trabaja());
         }
     }
 }
